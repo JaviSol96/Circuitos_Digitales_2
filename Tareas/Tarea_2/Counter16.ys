@@ -1,0 +1,28 @@
+# Archivo scrip yosys
+
+# Para que yosys lea nuestro diseno
+read_verilog Counter.v
+
+# Jerarquia de diseno
+hierarchy -check -top Counter16
+
+# Comandos de alto nivel para generar el archivo sintetizado RTLIL
+proc; opt; fsm; opt; memory; opt
+
+# Generarmos el archivo sintetizado RTLIL
+write_verilog Counter_synth_rtlil.v
+
+# Mapeo de la liberia interna de celdas
+techmap; opt
+
+# Se agregan los flipflops
+dfflibmap -liberty ./cmos_cells.lib
+
+# Utilizacion de la libreria de tecnologia 
+abc -liberty ./cmos_cells.lib
+
+# Cleanup
+clean
+
+# se genera el archivo sintetizado completo
+write_verilog Counter_full_synth.v

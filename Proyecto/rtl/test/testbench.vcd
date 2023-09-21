@@ -1,0 +1,270 @@
+$date
+	Wed Nov 30 23:34:33 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! COL $end
+$var wire 1 " transmitting $end
+$var wire 1 # xmit $end
+$var wire 8 $ tx_o_set [7:0] $end
+$var wire 10 % tx_code_group [9:0] $end
+$var wire 1 & signal_detect $end
+$var wire 1 ' rx_lpi_active $end
+$var wire 1 ( rx_even $end
+$var wire 1 ) receiving $end
+$var wire 1 * power_on $end
+$var wire 1 + mr_main_reset $end
+$var wire 1 , mr_loopback $end
+$var wire 1 - code_sync_status $end
+$var wire 1 . TX_ER $end
+$var wire 1 / TX_EN $end
+$var wire 8 0 TXD [7:0] $end
+$var wire 10 1 SUDI [9:0] $end
+$var wire 1 2 RX_DV $end
+$var wire 1 3 RX_CLK $end
+$var wire 8 4 RXD [7:0] $end
+$var wire 1 5 RESET $end
+$var wire 1 6 GTX_CLK $end
+$scope module SYNC $end
+$var wire 1 7 signal_detectCHANGE $end
+$var wire 1 & signal_detect $end
+$var wire 1 + mr_main_reset $end
+$var wire 1 , mr_loopback $end
+$var wire 10 8 code_group [9:0] $end
+$var wire 1 6 clk $end
+$var parameter 32 9 WIDTH $end
+$var parameter 32 : num_states $end
+$var reg 10 ; SUDI [9:0] $end
+$var reg 1 - code_sync_status $end
+$var reg 2 < good_cgs [1:0] $end
+$var reg 13 = nxt_state [12:0] $end
+$var reg 1 ( rx_even $end
+$var reg 13 > state [12:0] $end
+$scope module signal $end
+$var wire 1 & signal_detect $end
+$var wire 1 6 clk $end
+$var reg 1 7 signal_detectCHANGE $end
+$var reg 1 ? signal_detect_old $end
+$upscope $end
+$upscope $end
+$scope module dut_tx $end
+$var wire 1 @ TX_ER $end
+$var wire 1 # xmit $end
+$var wire 1 ) receiving $end
+$var wire 1 + mr_main_reset $end
+$var wire 1 / TX_EN $end
+$var wire 8 A TXD [7:0] $end
+$var wire 1 6 GTX_CLK $end
+$var parameter 32 B END_of_Packet_NOEXT $end
+$var parameter 32 C EPD2_NOEXT $end
+$var parameter 32 D FALSE $end
+$var parameter 32 E IDLE $end
+$var parameter 32 F Start_of_Packet $end
+$var parameter 32 G TX_Data $end
+$var parameter 32 H TX_Packet $end
+$var parameter 32 I TX_Test_Xmit $end
+$var parameter 32 J XMIT_Data $end
+$var reg 1 K COL $end
+$var reg 1 L TX_OSET_indicate $end
+$var reg 5 M pcs_tx_state [4:0] $end
+$var reg 1 N power_on $end
+$var reg 5 O state [4:0] $end
+$var reg 1 P transmitting $end
+$var reg 1 Q tx_even $end
+$var reg 8 R tx_o_set [7:0] $end
+$scope function VOID $end
+$var reg 8 S x [7:0] $end
+$upscope $end
+$upscope $end
+$scope module recp_dut $end
+$var wire 1 ( EVEN $end
+$var wire 10 T SUDI [9:0] $end
+$var wire 1 # xmit $end
+$var wire 1 + mr_main_reset $end
+$var wire 1 6 clk $end
+$var parameter 3 U Carrier_detect $end
+$var parameter 3 V IDLE_D $end
+$var parameter 3 W RX_DATA $end
+$var parameter 3 X RX_K $end
+$var parameter 3 Y Receive $end
+$var parameter 3 Z Start_of_packet $end
+$var parameter 3 [ TRI_RRI $end
+$var parameter 3 \ Wait_for_k $end
+$var reg 8 ] RXD [7:0] $end
+$var reg 1 3 RX_CLK $end
+$var reg 1 2 RX_DV $end
+$var reg 1 ^ check_end_TR_K28_5 $end
+$var reg 8 _ nxt_state [7:0] $end
+$var reg 1 ' rx_lpi_active $end
+$var reg 8 ` state [7:0] $end
+$upscope $end
+$scope module tester_dut $end
+$var wire 1 ! COL $end
+$var wire 1 " transmitting $end
+$var wire 8 a tx_o_set [7:0] $end
+$var wire 10 b tx_code_group [9:0] $end
+$var reg 1 6 GTX_CLK $end
+$var reg 1 5 RESET $end
+$var reg 8 c TXD [7:0] $end
+$var reg 1 / TX_EN $end
+$var reg 1 . TX_ER $end
+$var reg 1 , mr_loopback $end
+$var reg 1 + mr_main_reset $end
+$var reg 1 * power_on $end
+$var reg 1 ) receiving $end
+$var reg 1 & signal_detect $end
+$var reg 16 d tx_config_reg [15:0] $end
+$var reg 1 # xmit $end
+$upscope $end
+$scope module tx_dut $end
+$var wire 1 6 GTX_CLK $end
+$var wire 1 5 RESET $end
+$var wire 1 / TX_EN $end
+$var wire 1 . TX_ER $end
+$var wire 1 + mr_main_reset $end
+$var wire 1 * power_on $end
+$var wire 1 ) receiving $end
+$var wire 8 e tx_o_set [7:0] $end
+$var parameter 32 f DATA_GO $end
+$var parameter 32 g GENERATE_CODE_GROUPS $end
+$var parameter 32 h IDLE_DISPARITY_OK $end
+$var parameter 32 i IDLE_DISPARITY_TEST $end
+$var parameter 32 j IDLE_I2B $end
+$var parameter 32 k SPECIAL_GO $end
+$var reg 1 l COL $end
+$var reg 1 m PUDR $end
+$var reg 16 n cg_timer [15:0] $end
+$var reg 1 o encoder_K $end
+$var reg 5 p pcs_tx_state [4:0] $end
+$var reg 5 q st [4:0] $end
+$var reg 1 r transmitting $end
+$var reg 10 s tx_code_group [9:0] $end
+$var reg 1 t tx_disparity $end
+$var reg 1 u tx_even $end
+$var reg 1 v tx_oset_indicate $end
+$scope function ENCODE $end
+$var reg 8 w GMII_TXD [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 k
+b110 j
+b100 i
+b101 h
+b1 g
+b11 f
+b0 \
+b111 [
+b100 Z
+b101 Y
+b1 X
+b110 W
+b10 V
+b11 U
+b10 J
+b0 I
+b100 H
+b101 G
+b11 F
+b1 E
+b0 D
+b111 C
+b110 B
+b1101 :
+b1010 9
+$end
+#0
+$dumpvars
+bx w
+xv
+xu
+xt
+bx s
+xr
+bx q
+bx p
+xo
+bx n
+xm
+xl
+bx e
+bx d
+bx c
+bx b
+bx a
+bx `
+bx _
+x^
+bx ]
+bx T
+bx S
+bx R
+0Q
+xP
+bx O
+1N
+bx M
+1L
+xK
+bx A
+z@
+x?
+bx >
+bx =
+bx <
+bx ;
+bx 8
+x7
+06
+x5
+bx 4
+x3
+x2
+bx 1
+bx 0
+0/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+bx %
+bx $
+x#
+x"
+x!
+$end
+#1
+16
+#2
+06
+#3
+16
+#4
+06
+#5
+16
+#6
+06
+#7
+16
+#8
+1#
+1/
+0+
+0*
+05
+06
+#9

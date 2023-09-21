@@ -1,0 +1,10 @@
+
+Re-integrating ABC results.
+ABC RESULTS:              NAND cells:       17
+ABC RESULTS:               NOR cells:       34
+ABC RESULTS:               NOT cells:       13
+ABC RESULTS:        internal signals:       90
+ABC RESULTS:           input signals:       10
+ABC RESULTS:          output signals:        5
+Removing temp directory.
+
